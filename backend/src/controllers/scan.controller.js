@@ -23,7 +23,7 @@ export async function registrarEscaneo (req, res) {
 export async function sendEndTime(req, res) {
     try {
       const { body } = req;
-      const { id } = req.query; 
+      const { id } = req.query;
       const scanRepository = AppDataSource.getRepository(Scan);
 
       const scanFound = await scanRepository.findOne({

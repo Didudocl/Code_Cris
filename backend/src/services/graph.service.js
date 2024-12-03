@@ -1,4 +1,3 @@
-import User from "../entity/user.entity.js";
 import { AppDataSource } from "../config/configDb";
 
 export async function getUserId(User){
